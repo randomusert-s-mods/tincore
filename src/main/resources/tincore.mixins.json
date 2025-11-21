@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "io.github.randomusert.mods.tincore.core.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TestMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
