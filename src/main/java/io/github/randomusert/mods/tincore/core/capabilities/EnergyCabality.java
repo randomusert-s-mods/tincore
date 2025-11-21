@@ -8,6 +8,11 @@ import net.neoforged.neoforge.capabilities.BlockCapability;
 import net.neoforged.neoforge.capabilities.EntityCapability;
 import net.neoforged.neoforge.capabilities.ItemCapability;
 
+
+/**
+ * Capability class for energy storage.
+ * {@Link ITinEnergy} stores the interface providing energy storage functionality.
+ */
 public class EnergyCabality {
     public static final class EnergyStorage {
     
