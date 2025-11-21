@@ -4,6 +4,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import io.github.randomusert.mods.tincore.helper.*;
 
 import net.minecraft.world.entity.player.Player;
 
@@ -12,6 +13,6 @@ import net.minecraft.world.entity.player.Player;
 public class TestMixin {
     @Inject(method = "tick", at = @At("HEAD"))
     private void onTick(CallbackInfo ci) {
-        System.out.println("Player mixin running!");
+        Loghelper.LogInfo("Mixin: Player ticked", "tincore");
     }
 }
