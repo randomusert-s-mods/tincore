@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "io.github.randomusert.mods.tincore.core.mixin",
+  "package": "io.github.randomusert.mods.tincore.core.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "TestMixin"
