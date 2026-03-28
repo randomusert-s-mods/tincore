@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "tincore",
+  "version": "${version}",
+  "name": "tincore",
+  "description": "A library for the tin mod ecosystem. Also known for my mods mostly",
+  "authors": [
+    "randomusert"
+  ],
+  "contact": {
+    "homepage": "https://randomusert-s-mods.github.io/web/"
+  },
+  "license": "MIT",
+  "icon": "assets/tincore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.randomusert.mods.tincore.fabric.TincoreFabric"
+    ],
+    "client": [
+      "io.github.randomusert.mods.tincore.fabric.client.TincoreFabricClient"
+    ]
+  },
+  "mixins": [
+    "tincore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
