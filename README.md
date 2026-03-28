@@ -5,7 +5,7 @@ Tincore is a library for the tin minecraft mod ecosystem. It will be required by
 COMING SOON! No ETA, yet.
 
 ## issues
-This mod's source can be on 2 places: GitHub and Gitlab (not available currently)
+This mod's source can be on 2 places: GitHub and Gitlab
 
 ## Tin mod ecosystem
 Welcome to tin mod ecosystem. This ecosystem of mods are developed by randomusert on GitHub.
