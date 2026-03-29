@@ -54,6 +54,7 @@ subprojects {
     publishing {
         publications {
             gpr(MavenPublication) {
+                artifactId = "${rootProject.archives_name}-${project.name}"
                 from(components.java)
             }
         }
