@@ -8,7 +8,7 @@ public class LogUtils {
      *
      * @since 0.2
      * */
-    public void LogError(String msg) {
+    public static void LogError(String msg) {
         System.out.println("[Error]: " + msg);
     }
 
@@ -17,7 +17,7 @@ public class LogUtils {
      *
      * @since 0.2
      * */
-    public void LogWarn(String msg) {
+    public static void LogWarn(String msg) {
         System.out.println("[Warn]: " + msg);
     }
 
@@ -26,7 +26,7 @@ public class LogUtils {
      *
      * @since 0.2
      * */
-    public void LogInfo(String msg) {
+    public static void LogInfo(String msg) {
         System.out.println("[Info]: " + msg);
     }
 }

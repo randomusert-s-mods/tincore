@@ -8,11 +8,28 @@ package io.github.randomusert.mods.tincore.energy;
  * */
 public class EnergyStorage implements IEnergyStorage{
 
-    private int energy;
-    private final int capacity;
+    protected int energy;
+    protected final int capacity;
+    protected int maxReceive;
+    protected int maxExtract;
 
     public EnergyStorage(int capacity) {
+        this(capacity, capacity, capacity, 0);
+    }
+
+    public EnergyStorage(int capacity, int maxTransfer) {
+        this(capacity, maxTransfer, maxTransfer, 0);
+    }
+
+    public EnergyStorage(int capacity, int maxReceive, int maxExtract) {
+        this(capacity, maxReceive, maxExtract, 0);
+    }
+
+    public EnergyStorage(int capacity, int maxReceive, int maxExtract, int energy) {
         this.capacity = capacity;
+        this.maxReceive = maxReceive;
+        this.maxExtract = maxExtract;
+        this.energy = Math.max(0, Math.min(capacity, energy));
     }
 
     @Override
@@ -29,6 +46,15 @@ public class EnergyStorage implements IEnergyStorage{
         return taken;
     }
 
+    @Override
+    public boolean canExtract() {
+        return this.maxExtract > 0;
+    }
+
+    @Override
+    public boolean canInsert() {
+        return this.maxReceive > 0;
+    }
 
     @Override
     public int getEnergy() {
