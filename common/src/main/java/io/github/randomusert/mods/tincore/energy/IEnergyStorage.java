@@ -19,4 +19,6 @@ public interface IEnergyStorage {
     default boolean canInsert() { return true; }
 
     default boolean canExtract() { return true; }
+
+    int setEnergy(int amount, boolean simulate);
 }

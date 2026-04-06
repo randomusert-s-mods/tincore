@@ -65,4 +65,10 @@ public class EnergyStorage implements IEnergyStorage{
     public int getCapacity() {
         return capacity;
     }
+
+    @Override
+    public int setEnergy(int amount, boolean simulate) {
+        this.energy = amount;
+        return this.energy;
+    }
 }
