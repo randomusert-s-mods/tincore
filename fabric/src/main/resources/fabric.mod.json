@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tincore",
-  "version": "${version}",
+  "version": "${mod_version}",
   "name": "tincore",
   "description": "A library for the tin mod ecosystem. Also known for my mods mostly",
   "authors": [

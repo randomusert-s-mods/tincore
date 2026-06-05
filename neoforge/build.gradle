@@ -33,3 +33,7 @@ dependencies {
     common(project(path: ":common")) { transitive false }
 
 }
+
+tasks.named('shadowJar') {
+    zip64 true
+}
