@@ -16,21 +16,21 @@ A library for the tin mod ecosystem. Also known for my mods mostly
 [[dependencies.tincore]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21,)"
+versionRange = "[26.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.tincore]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.1,)"
+versionRange = "[26.1,26.2)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.tincore]]
 modId = "architectury"
 type = "required"
-versionRange = "[13.0.8,)"
+versionRange = "[20.0.5,)"
 ordering = "AFTER"
 side = "BOTH"
 
